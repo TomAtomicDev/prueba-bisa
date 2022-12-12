@@ -1,0 +1,18 @@
+.header, .navbar, .footer {
+    height: 12%;
+    padding: 2rem;
+    border: 2px solid black;
+}
+
+.aside {
+    
+    padding: 2rem;
+    border: 2px solid black;
+    flex-grow: 1;
+}
+
+.section {
+    padding: 2rem;
+    border: 2px solid black;
+    flex-grow: 3;
+}
