@@ -17,9 +17,7 @@ export default function Home() {
         <button onClick={() => router.push("/technical/challenge")}>
           Go to '/technical/challenge'
         </button>
-        <button onClick={() => router.push("/technical/challenge")}>
-          Go to '/api'
-        </button>
+        <button onClick={() => router.push("/api")}>Go to '/api'</button>
       </main>
     </div>
   );

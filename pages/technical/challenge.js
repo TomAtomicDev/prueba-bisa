@@ -5,11 +5,11 @@ import Header from '../../components/Header';
 import Navbar from '../../components/Navbar';
 import Section from '../../components/Section';
 
-export default function Challenge() {
+export default function Challenge({text}) {
   return (
     <>
       <div className={styles.container}>
-        <Header className={styles.header}/>
+        <Header className={styles.header} text={text}/>
         <Navbar className={styles.navbar}/>
         <main className={styles.main}>
             <Aside className={styles.aside}/>
@@ -20,3 +20,9 @@ export default function Challenge() {
     </>
   );
 }
+
+Challenge.getInitialProps = async (ctx) => {
+    const res = await fetch('/api')
+    const json = await res.json()
+    return {text: json.header}
+  }
